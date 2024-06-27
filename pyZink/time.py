@@ -14,17 +14,17 @@ class Time_me:
 
     def __del__(self):
         self.stop()
-    
+
     def start(self):
         start_time = datetime.datetime.now()
         print("Timer started at:", start_time)
         return start_time
-    
+
     def stop(self):
         end_time = datetime.datetime.now()
         print("\nTimer stopped at:", end_time)
         print("Time elapsed:", end_time - self.start_time)
-    
+
     def lap(self):
         now = datetime.datetime.now()
         if not self.last_lap:
@@ -34,3 +34,8 @@ class Time_me:
         print(f"Lap {self.lap_i} duration: {lap_time}")
         self.last_lap = now
         self.lap_i += 1
+
+if __name__ == "__main__":
+    import time
+    with Time_me():
+        time.sleep(2)
