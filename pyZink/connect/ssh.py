@@ -1,9 +1,8 @@
-#   pyZink > connect > SSH_Client.py
+#   pyZink > connect > ssh.py
 #   morten@znk.dk
 #   Created April 2024
 """
     This document contains the 'SSH_Client'-class that has functionality to connect to- and send commands to a host through the SSH-interface
-    This class is used in the Cisco_Switch-class to fetch data when testing == False
 """
 
 import paramiko
