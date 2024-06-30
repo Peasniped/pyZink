@@ -1,2 +1,2 @@
-# add requirements here:
-numpy===1.24.2 # just an example, is not used
+# requirement == major.minor.patch
+paramiko==3.3.1
