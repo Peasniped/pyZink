@@ -1,15 +1,16 @@
 Create an Account on PyPI
 Register at https://pypi.org/account/register/.
 
-Ensure your package is ready to be distributed. You can do this by running:
->> python setup.py sdist bdist_wheel
+Build your package to make it ready to be distributed.
+>> py -m pip install setuptools wheel
+>> py -m setup.py sdist bdist_wheel
 
 Upload to PyPI
 Install twine: If you haven't installed twine, do so using pip:
->> pip install twine
+>> py -m pip install twine
 
->>> twine upload dist/*
-You will be prompted to enter your PyPI username and password.
+>>> py -m twine upload dist/*
+You will be prompted to enter your PyPI API Key
 
 Verify and Test
 After uploading, your package should be visible on PyPI. You can test the installation by creating a virtual environment and installing your package:
