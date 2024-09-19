@@ -11,7 +11,7 @@ def parse_readme(filename: str = "README.md"):
 
 setup(
     name="pyZink",
-    version="0.1",
+    version="0.1.2",
     description='Python functionality that I use on a regular basis, that others might find use or inspiration from.',
     long_description=parse_readme(),
     long_description_content_type='text/markdown',
